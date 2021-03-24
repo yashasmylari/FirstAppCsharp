@@ -17,5 +17,14 @@ namespace FirstAppCsharp
             InitializeComponent();
         }
 
+        private void BtnHello_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Hello " + TxtName.Text);
+        }
+
+        private void BtnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

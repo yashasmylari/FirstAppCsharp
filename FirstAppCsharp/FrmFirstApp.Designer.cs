@@ -34,6 +34,8 @@ namespace FirstAppCsharp
             this.PicOne = new System.Windows.Forms.PictureBox();
             this.PicTwo = new System.Windows.Forms.PictureBox();
             this.TxtName = new System.Windows.Forms.TextBox();
+            this.BtnHello = new System.Windows.Forms.Button();
+            this.BtnExit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PicOne)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicTwo)).BeginInit();
             this.SuspendLayout();
@@ -75,12 +77,34 @@ namespace FirstAppCsharp
             this.TxtName.Size = new System.Drawing.Size(204, 23);
             this.TxtName.TabIndex = 3;
             // 
+            // BtnHello
+            // 
+            this.BtnHello.Location = new System.Drawing.Point(12, 89);
+            this.BtnHello.Name = "BtnHello";
+            this.BtnHello.Size = new System.Drawing.Size(86, 23);
+            this.BtnHello.TabIndex = 4;
+            this.BtnHello.Text = "Hello";
+            this.BtnHello.UseVisualStyleBackColor = true;
+            this.BtnHello.Click += new System.EventHandler(this.BtnHello_Click);
+            // 
+            // BtnExit
+            // 
+            this.BtnExit.Location = new System.Drawing.Point(713, 403);
+            this.BtnExit.Name = "BtnExit";
+            this.BtnExit.Size = new System.Drawing.Size(75, 23);
+            this.BtnExit.TabIndex = 5;
+            this.BtnExit.Text = "Exit";
+            this.BtnExit.UseVisualStyleBackColor = true;
+            this.BtnExit.Click += new System.EventHandler(this.BtnExit_Click);
+            // 
             // FrmFirstApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.BtnExit);
+            this.Controls.Add(this.BtnHello);
             this.Controls.Add(this.TxtName);
             this.Controls.Add(this.PicTwo);
             this.Controls.Add(this.PicOne);
@@ -100,6 +124,8 @@ namespace FirstAppCsharp
         private System.Windows.Forms.PictureBox PicOne;
         private System.Windows.Forms.PictureBox PicTwo;
         private System.Windows.Forms.TextBox TxtName;
+        private System.Windows.Forms.Button BtnHello;
+        private System.Windows.Forms.Button BtnExit;
     }
 }
 
