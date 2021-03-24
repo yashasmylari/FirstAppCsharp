@@ -26,5 +26,37 @@ namespace FirstAppCsharp
         {
             this.Close();
         }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            PicOne.Visible = true;
+            PicTwo.Visible = false;
+            LblQuestion.Visible = false;
+            LblAnswer.Visible = false;
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            PicOne.Visible = false;
+            PicTwo.Visible = true;
+            LblQuestion.Visible = false;
+            LblAnswer.Visible = false;
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            PicOne.Visible = true;
+            PicTwo.Visible = true;
+            LblAnswer.Visible = false;
+            LblQuestion.Visible = false;
+        }
+
+        private void RdConfused_CheckedChanged(object sender, EventArgs e)
+        {
+            PicOne.Visible = false;
+            PicTwo.Visible = false;
+            LblQuestion.Visible = true;
+            LblAnswer.Visible = true;
+        }
     }
 }
