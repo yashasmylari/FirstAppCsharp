@@ -43,6 +43,8 @@ namespace FirstAppCsharp
             this.RdPath = new System.Windows.Forms.RadioButton();
             this.LblQuestion = new System.Windows.Forms.Label();
             this.LblAnswer = new System.Windows.Forms.Label();
+            this.LblWork = new System.Windows.Forms.Label();
+            this.LblKeep = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.PicOne)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicTwo)).BeginInit();
             this.GrpMood.SuspendLayout();
@@ -115,7 +117,7 @@ namespace FirstAppCsharp
             this.GrpMood.Controls.Add(this.RdPath);
             this.GrpMood.Location = new System.Drawing.Point(12, 384);
             this.GrpMood.Name = "GrpMood";
-            this.GrpMood.Size = new System.Drawing.Size(639, 42);
+            this.GrpMood.Size = new System.Drawing.Size(664, 42);
             this.GrpMood.TabIndex = 6;
             this.GrpMood.TabStop = false;
             this.GrpMood.Text = "PickOne";
@@ -188,12 +190,37 @@ namespace FirstAppCsharp
             this.LblAnswer.TabIndex = 8;
             this.LblAnswer.Text = "Decide before making any move";
             // 
+            // LblWork
+            // 
+            this.LblWork.AutoSize = true;
+            this.LblWork.Font = new System.Drawing.Font("Bernard MT Condensed", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblWork.Location = new System.Drawing.Point(73, 226);
+            this.LblWork.Name = "LblWork";
+            this.LblWork.Size = new System.Drawing.Size(233, 38);
+            this.LblWork.TabIndex = 9;
+            this.LblWork.Text = "Work Your Ass Off";
+            this.LblWork.Visible = false;
+            this.LblWork.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // LblKeep
+            // 
+            this.LblKeep.AutoSize = true;
+            this.LblKeep.Font = new System.Drawing.Font("Bernard MT Condensed", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblKeep.Location = new System.Drawing.Point(512, 226);
+            this.LblKeep.Name = "LblKeep";
+            this.LblKeep.Size = new System.Drawing.Size(183, 38);
+            this.LblKeep.TabIndex = 10;
+            this.LblKeep.Text = "Keep Doing It";
+            this.LblKeep.Visible = false;
+            // 
             // FrmFirstApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.LblKeep);
+            this.Controls.Add(this.LblWork);
             this.Controls.Add(this.LblAnswer);
             this.Controls.Add(this.LblQuestion);
             this.Controls.Add(this.GrpMood);
@@ -229,6 +256,8 @@ namespace FirstAppCsharp
         private System.Windows.Forms.Label LblQuestion;
         private System.Windows.Forms.RadioButton RdConfused;
         private System.Windows.Forms.Label LblAnswer;
+        private System.Windows.Forms.Label LblWork;
+        private System.Windows.Forms.Label LblKeep;
     }
 }
 

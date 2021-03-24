@@ -29,10 +29,12 @@ namespace FirstAppCsharp
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
+            LblWork.Visible = false;
             PicOne.Visible = true;
             PicTwo.Visible = false;
             LblQuestion.Visible = false;
             LblAnswer.Visible = false;
+            LblKeep.Visible = true;
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
@@ -41,6 +43,8 @@ namespace FirstAppCsharp
             PicTwo.Visible = true;
             LblQuestion.Visible = false;
             LblAnswer.Visible = false;
+            LblWork.Visible = true;
+            LblKeep.Visible = false;
         }
 
         private void radioButton3_CheckedChanged(object sender, EventArgs e)
@@ -49,6 +53,7 @@ namespace FirstAppCsharp
             PicTwo.Visible = true;
             LblAnswer.Visible = false;
             LblQuestion.Visible = false;
+            LblWork.Visible = false;
         }
 
         private void RdConfused_CheckedChanged(object sender, EventArgs e)
@@ -57,6 +62,12 @@ namespace FirstAppCsharp
             PicTwo.Visible = false;
             LblQuestion.Visible = true;
             LblAnswer.Visible = true;
+            LblWork.Visible = false;
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
